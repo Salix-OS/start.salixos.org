@@ -1,0 +1,78 @@
+<!--
+        index.html
+        
+        Copyright 2010  <george@anemone>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Start Page - SalixOS</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.18.1" />
+	<script language="JavaScript">
+/*
+Browser Language Redirect script- By JavaScript Kit
+For this and over 400+ free scripts, visit http://www.javascriptkit.com
+This notice must stay intact
+*/
+
+//Enter ISO 639-2 letter Language codes to detect (see: http://www.w3.org/WAI/ER/IG/ert/iso639.htm):
+var langcodes=new Array("en", "el", "fr", "de", "nl", "default")
+
+//Enter corresponding redirect URLs (last one is for default URL):
+var langredirects=new Array("/en", "/el", "/fr", "/de", "/nl", "/en")
+
+var languageinfo=navigator.language? navigator.language : navigator.userLanguage
+var gotodefault=1
+
+function redirectpage(dest){
+if (window.location.replace)
+window.location.replace(dest)
+else
+window.location=dest
+}
+
+for (i=0;i<langcodes.length-1;i++){
+if (languageinfo.substr(0,2)==langcodes[i]){
+redirectpage(langredirects[i])
+gotodefault=0
+break
+}
+}
+
+if (gotodefault)
+redirectpage(langredirects[langcodes.length-1])
+</script>
+
+<script type="text/javascript">
+	function setFocus()
+	{
+		     document.getElementById("name").focus();
+	     }
+     </script>
+
+</head>
+
+<body>
+You should automatically be redirected to the SalixOS Start page for your language. The English version of the start page is located at:
+<a href="http://start.salixos.org/en">http://start.salixos.org/en</a>
+</body>
+</html>

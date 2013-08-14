@@ -1,0 +1,184 @@
+/* Created by George Vlahavas <vlahavas~at~gmail~dot~com> */
+
+body {
+margin: 0;
+padding: 0;
+font-family:"Trebuchet MS", "Liberation Sans", verdana, arial, helvetica, sans-serif ;
+font-size: 80%;
+color: #000000;
+text-align: center;
+}
+
+/*typography*/
+a, a:link, a:visited, a:active{
+color: #050505;
+padding: 0px 5px 0 5px;
+}
+a:hover{
+background: #6e9834;
+color:#ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+clear: both;
+margin: 1.6em 0em .2em 0em;
+}
+h1, h1 a {
+color: #000000;
+font-size: 1.4em;
+margin: .6em 0em .2em 0em;
+}
+h2 {
+color:#000000;
+font-size: 1.4em;
+}
+h3 {
+color:#000000;
+font-size: 1.2em;
+}
+h4 {
+font-size: 1.2em;
+}
+h5 {
+font-size: 1.0em;
+}
+h6 {
+font-size: 0.8em;
+}
+
+img {
+border: 0;
+margin: 0;
+padding: 0;
+}
+
+ol, ul, li {
+line-height: 1.8em;
+margin-top: 0.2em;
+margin-bottom: 0.1em; 
+}
+p {
+line-height: 1.2em;
+margin: 1em 0em 1em 0em;
+clear: both;
+}
+
+pre {/*moz 1.0/1.1/1.2.1, net 7.0/7.01 make this way too small*/
+font-family: monospace;
+font-size: 1.0em;
+}
+strong, b {font-weight: bold;}
+
+/* Layout ------------------------------------------------------------------------------*/
+
+#heading{
+height: 40px;
+width:500px;
+margin-top: 40px;
+margin-left: auto;
+margin-bottom: 20px;
+margin-right: auto;
+position:relative;
+}
+
+#footer{
+text-align: center;
+}
+
+#footer a:hover{
+background: #ffffff;
+}
+
+#flags{
+text-align: right
+}
+
+#flags a:hover{
+background: #ffffff;
+}
+
+#searchresults{
+padding:0px;
+margin:0px auto;
+width:95%;
+position:relative;
+z-index: 50;
+text-align: left;
+}
+
+/* Logo */
+#logo{
+background:url(/logo.png) no-repeat 0 0;
+width:500px;
+height:40px;
+position:absolute;
+top:14px;
+left:0px;
+z-index:40;
+}
+
+#logo a.ir{
+background:url(/logo.png) no-repeat 0 0;
+z-index:60;
+width:500px;
+height:40px;
+position:absolute;
+top:0;
+left:0;
+}
+
+/* Links */
+ul#salixLinks{
+list-style:none;
+margin:0 0 .5em 0;
+padding:0;
+height:2.2em;
+}
+
+ul#salixLinks li{
+margin:.1em .1em;
+}
+
+ul#salixLinks li.left{
+float:left;
+}
+
+ul#salixLinks li.right{
+float:right;
+}
+
+ul#salixLinks li.center{
+float:center;
+}
+
+/*duckduckgo inputform*/
+#searchbox{
+padding:15px;
+margin:0px auto;
+width:532px;
+position:relative;
+z-index: 50;
+}
+
+#inputform {
+  float:none;
+  width:500px;
+}
+
+#searchtext {
+  border: #6E9834 solid 1px;
+  width: 464px;
+  font-size: 20px;
+  height:28px;
+}
+#searchbutton {
+  background: url("searchbutton.png") no-repeat left top transparent;
+  height:32px;
+  width:32px;
+  border:0;
+  position:absolute;
+}
+
+#searchbutton:active {
+  background: url("searchbutton.png") no-repeat left bottom transparent;
+}
