@@ -40,7 +40,7 @@
 	<!-- Links. TRANSLATE. -->
 	<ul id="salixLinks">
 	<li class="left"><a href="http://www.salixos.org">Página principal</a></li>
-	<li class="left"><a href="http://docs.salixos.org/wiki/Download">Descargas</a></li>
+	<li class="left"><a href="http://www.salixos.org/download.html">Descargas</a></li>
 	<li class="left"><a href="http://forum.salixos.org">Foro</a></li>
 	<li class="left"><a href="http://webchat.freenode.net/?randomnick=1&channels=salix&prompt=1">Canal IRC</a></li>
 	</ul>
